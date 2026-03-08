@@ -50,3 +50,17 @@ gym.register(
     },
     disable_env_checker=True,
 )
+
+##
+# IK Relative Control + Isaac Lab Mimic
+##
+
+gym.register(
+    id="Isaac-Lift-Cube-OpenArm-IKRel-Mimic-v0",
+    entry_point="openarm.tasks.manager_based.openarm_manipulation.unimanual.lift.lift_mimic_env:OpenArmLiftMimicEnv",
+    kwargs={
+        "env_cfg_entry_point": f"{__name__}.ik_rel_mimic_env_cfg:OpenArmCubeLiftIKRelMimicEnvCfg",
+        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:OpenArmLiftCubePPORunnerCfg",
+    },
+    disable_env_checker=True,
+)
