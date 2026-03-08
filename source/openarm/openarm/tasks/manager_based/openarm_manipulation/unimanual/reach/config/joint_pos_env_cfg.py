@@ -23,7 +23,7 @@ from ..reach_env_cfg import (
     ReachEnvCfg,
 )
 
-from source.openarm.openarm.tasks.manager_based.openarm_manipulation.assets.openarm_unimanual import (
+from openarm.tasks.manager_based.openarm_manipulation.assets.openarm_unimanual import (
     OPEN_ARM_CFG,
 )
 from isaaclab.assets.articulation import ArticulationCfg

@@ -16,7 +16,7 @@ import isaaclab.sim as sim_utils
 from isaaclab.actuators import ImplicitActuatorCfg
 from isaaclab.assets.articulation import ArticulationCfg
 
-from source.openarm.openarm.tasks.manager_based.openarm_manipulation import (
+from openarm.tasks.manager_based.openarm_manipulation import (
     OPENARM_ROOT_DIR,
 )
 

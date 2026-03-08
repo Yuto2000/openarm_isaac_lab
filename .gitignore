@@ -19,3 +19,4 @@ outputs
 .vscode
 */tutorials/
 datasets
+*.egg-info/
